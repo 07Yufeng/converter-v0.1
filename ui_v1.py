@@ -80,7 +80,7 @@ if st.session_state.hp_text:
         st.subheader("Editable HP Input")
         st.caption(
             "Edit the uploaded HP code here before conversion. "
-            "For example, you can change RAPIDFEED, WELDFEED, POWER, WIDTH, OVERLAP, etc."
+            "E.g. change RAPIDFEED, WELDFEED, POWER, etc. if needed"
         )
 
         edited_hp_text = st.text_area(
