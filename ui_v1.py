@@ -3,7 +3,7 @@ from converter_v1_ui import convert_hp_to_mpf_text, normalize_power_head
 
 st.set_page_config(page_title="HP to MPF Converter", layout="wide")
 
-st.title("TRUMPF HP to BEaM MPF Converter")
+st.title("TRUMPF HP to BEaM MPF Converter v0.1")
 
 # -----------------------------
 # Sidebar conversion settings
@@ -14,7 +14,7 @@ power_head_label = st.sidebar.radio(
     "Select laser power head",
     ["10Vx", "24Vx"],
     index=1,
-    help="This controls the PUIS_SET formula and gas settings used in the MPF output."
+    help="Controls the power formula and gas settings used."
 )
 
 power_head = normalize_power_head(power_head_label)
